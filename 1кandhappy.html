@@ -1,0 +1,297 @@
+```html
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Бидний жижигхэн ертөнц ❤️</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+margin:0;
+font-family:Georgia,serif;
+color:white;
+background:linear-gradient(135deg,#101827,#526176);
+min-height:100vh;
+text-align:center;
+overflow-x:hidden
+}
+.box{width:90%;max-width:500px;margin:auto;padding:70px 20px}
+.heart{font-size:65px;animation:beat 2s infinite}
+h1{font-weight:normal;font-size:32px}
+h2{font-weight:normal;font-size:27px}
+p{color:#ddd;line-height:1.9}
+input{
+width:90%;padding:14px;border:0;border-radius:25px;
+text-align:center;font-size:16px;margin-top:15px
+}
+button{
+padding:12px 24px;margin:10px 5px;border-radius:25px;
+border:1px solid #ffffff55;background:#ffffff15;color:white;
+font-size:15px
+}
+#main{display:none}
+.menu{padding:15px;position:sticky;top:0;background:#111827ee;z-index:5}
+section{padding:55px 20px}
+.card{
+background:#ffffff0d;border:1px solid #ffffff20;
+border-radius:22px;padding:25px;margin:18px auto;
+max-width:500px
+}
+.poem{line-height:2.1}
+.photo{
+height:150px;border:1px dashed #ffffff55;
+border-radius:20px;margin:12px 0;
+display:flex;align-items:center;justify-content:center;color:#aaa
+}
+.rain{
+position:fixed;inset:0;pointer-events:none;opacity:.25;
+background-image:linear-gradient(110deg,transparent 45%,#fff 46%,transparent 47%);
+background-size:25px 45px;
+animation:rain .5s linear infinite;
+}
+@keyframes rain{to{background-position:0 45px}}
+@keyframes beat{50%{transform:scale(1.15)}}
+</style>
+</head>
+
+<body>
+
+<div class="rain"></div>
+
+<div id="login" class="box">
+
+<div class="heart">♡</div>
+
+<h1>Бидний жижигхэн ертөнц</h1>
+
+<p>
+Энэ бол хүн бүрт зориулсан газар биш.<br>
+Зөвхөн бид хоёрын дурсамж үлдэх<br>
+жижигхэн ертөнц.
+</p>
+
+<input id="pass" type="password" placeholder="Нууц код">
+
+<br>
+
+<button onclick="enter()">Дотогшоо орох</button>
+
+<p id="err"></p>
+
+</div>
+
+
+<div id="main">
+
+<div class="box">
+
+<div class="heart">♥</div>
+
+<h1>Тавтай морил ❤️</h1>
+
+<p>
+Зарим дурсамжийг мартахын тулд биш,<br>
+дахин санахад сайхан байлгахын тулд хадгалдаг.
+</p>
+
+</div>
+
+
+<div class="menu">
+
+<button onclick="go('story')">📖 Түүх</button>
+<button onclick="go('memory')">♡ Дурсамж</button>
+<button onclick="go('letter')">💌 Захидал</button>
+<button onclick="go('photo')">📸 Зураг</button>
+<button onclick="go('poem')">✨ Шүлэг</button>
+
+</div>
+
+
+<section id="story">
+
+<h2>Бидний түүх</h2>
+
+<div class="card">
+
+<p>
+Бүх зүйл заавал том зүйлээс эхэлдэггүй.
+Заримдаа энгийн нэг өдөр,
+энгийн нэг ярианаас эхэлдэг.
+</p>
+
+<p>
+Өдөр бүрийн жижигхэн яриа,
+инээд, хүлээсэн мессежүүд
+нэг мэдэхэд хамгийн нандин
+дурсамжууд болжээ.
+</p>
+
+</div>
+
+</section>
+
+
+<section id="memory">
+
+<h2>Дурсамжууд</h2>
+
+<div class="card">
+<h3>🌙 Оройн ярианууд</h3>
+<p>
+Удаан ярилцсан шөнүүд,
+хэлсэн жижигхэн үгс,
+инээсэн мөчүүд...
+</p>
+</div>
+
+<div class="card">
+<h3>☔ Жижигхэн мөчүүд</h3>
+<p>
+Хамт байсан энгийн цагууд
+дараа нь хамгийн их санадаг
+дурсамж болдог юм байна.
+</p>
+</div>
+
+<div class="card">
+<h3>❤️ Хамгийн нандин нь</h3>
+<p>
+Зураг биш ээ.
+Тэр мөчид мэдэрсэн мэдрэмж
+хамгийн удаан үлддэг.
+</p>
+</div>
+
+</section>
+
+
+<section id="letter">
+
+<h2>Чамд бичсэн захидал</h2>
+
+<div class="card">
+
+<p>
+Заримдаа хэлэх зүйл маш их байдаг ч
+яг хэлэх мөчдөө үг олддоггүй.
+</p>
+
+<p>
+Тиймээс хэлж амжаагүй үгсээ
+энэ жижигхэн ертөнцөд үлдээе.
+</p>
+
+<p>
+Хамт өнгөрүүлсэн цаг бүр,
+жижигхэн яриа бүр,
+инээсэн мөч бүр
+сэтгэлд өөрийн гэсэн байртай.
+</p>
+
+<p>
+Хугацаа өнгөрсөн ч
+зарим хүмүүсийн тухай бодоход
+сэтгэл зөөлөн хэвээрээ байдаг.
+</p>
+
+<p>
+Энэ газар тэр бүхнийг
+мартахгүй гэж биш,
+санахад сайхан байлгах гэж бий.
+</p>
+
+</div>
+
+</section>
+
+
+<section id="photo">
+
+<h2>Бидний зургууд</h2>
+
+<div class="photo">📸 Энд зураг орно</div>
+<div class="photo">♡ Энд нэг дурсамж</div>
+<div class="photo">🌙 Энд хамгийн дуртай зураг</div>
+
+</section>
+
+
+<section id="poem">
+
+<h2>Чамд</h2>
+
+<div class="card">
+
+<div class="poem">
+
+Шөнө намдахад бодол минь сэрж,<br>
+Чимээгүйхэн нэгэн дурсамж ирнэ.<br>
+Өнгөрсөн өдрийн жижигхэн мөчүүд<br>
+Өнөөдрийн сэтгэлд дахин гэрэлтэнэ.<br><br>
+
+Хэлээгүй үгс салхинд үлдэж,<br>
+Хэлсэн бүхэн дурсамж болон хоцорно.<br>
+Зарим хүн амьдралд чимээгүй ирээд<br>
+Зүрхэндээ дулаахан мөр үлдээнэ.<br><br>
+
+Цаг хугацаа хаашаа ч урссан<br>
+Зарим мөч буцаж ирэхгүй байж болно.<br>
+Харин сэтгэлд үлдсэн тэр гэрэл<br>
+Хэзээ ч бүрэн бөхдөггүй юм байна.
+
+</div>
+
+</div>
+
+</section>
+
+
+<div class="box">
+
+<div class="heart">♡</div>
+
+<p>
+Бидний дурсамж энд үлдэнэ.<br>
+Зөвхөн бид хоёрын жижигхэн ертөнц.
+</p>
+
+</div>
+
+</div>
+
+
+<script>
+
+function enter(){
+
+let p=document.getElementById("pass").value;
+
+if(p==="0708"){
+
+document.getElementById("login").style.display="none";
+document.getElementById("main").style.display="block";
+
+}else{
+
+document.getElementById("err").innerHTML=
+"Нууц код буруу байна ❤️";
+
+}
+
+}
+
+function go(id){
+
+document.getElementById(id)
+.scrollIntoView({behavior:"smooth"});
+
+}
+
+</script>
+
+</body>
+</html>
+```
